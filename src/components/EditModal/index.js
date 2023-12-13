@@ -74,7 +74,9 @@ const EditModal = ({ contacts, editedId, onSetModalIsOn, onSetContacts }) => {
         </div>
         <div className='error'>{error}</div>
         <div className='userInputWrapper'>
-          <button onClick={saveEditedContact}>Save</button>
+          <button disabled={error} onClick={saveEditedContact}>
+            Save
+          </button>
         </div>
       </div>
     </div>
